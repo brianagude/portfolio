@@ -59,7 +59,7 @@
 
 
 	p, h1, h2{
-		span{transition: color 10s;}
+		span{transition: color 15s;}
 		span:hover{transition: color 0s;}
 		span:nth-child(1n):hover{color: $pink1;}
 		span:nth-child(2n):hover{color: $pink2;}
