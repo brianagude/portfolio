@@ -27,8 +27,14 @@
 }
 	main{
 		width: 90vh;
-		margin: auto;
+		// margin: auto;
 		text-align:right;
+
+		position: fixed;
+		top: 45%;
+		left: 55%;
+
+		transform: translate(-50%, -50%);
 	}
 
 	nav{
