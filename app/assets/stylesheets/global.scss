@@ -15,21 +15,24 @@
 	$yellow: #f1d302;
 
 
+
 	body {
 		font-family: 'Anonymous Pro', monospace;
 	  font-size: 36px;
-		font-weight: 700;
+		cursor: crosshair;
+
+		// font-weight: 700;
 		// background-color: #F3F8F2;
 		// background-color: #EBE9E9;
-
+}
+	main{
 		width: 90vh;
 		margin: auto;
-
 		text-align:right;
 	}
 
 	nav{
-		margin-top: 50px;
+		margin-top: 40px;
 		width: 100%;
 		display: flex;
 		justify-content: flex-end;
@@ -60,3 +63,16 @@
 		span:nth-child(4n+1):hover{color: $blue;}
 		span:nth-child(5n):hover{color: $yellow;}
 	}
+
+
+	// media queries
+	  // @media (max-width: 1024px){
+		// 	span:hover{transition: color 0s;}
+		// 	span:nth-child(1n){color: $pink1;}
+		// 	span:nth-child(2n){color: $pink2;}
+		// 	// span:nth-child(7n-1){color: $pink3;}
+		// 	span:nth-child(7n-1){color: $pink4;}
+		// 	// span:nth-child(1n){color: $pink5;}
+		// 	span:nth-child(4n+1){color: $blue;}
+		// 	span:nth-child(5n){color: $yellow;}
+		// }
