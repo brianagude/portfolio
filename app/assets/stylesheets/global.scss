@@ -79,7 +79,7 @@
 
 	// media queries
 	  @media (max-width: 1024px){
-			p, a{font-size: 32px}
+			p, a{font-size: 36px}
 			h1, h2{
 				font-size: 52px;
 				span:nth-child(1n){color: $pink1;}
@@ -95,7 +95,7 @@
 				img{
 					width: 75px;
 					height: 75px;
-					margin-right: 0px;
+					margin-right: 5px;
 				}
 			}
 
