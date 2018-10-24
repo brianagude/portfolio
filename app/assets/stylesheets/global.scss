@@ -78,16 +78,23 @@
 
 	// media queries
 	  @media (max-width: 1024px){
-			h1, h2{font-size: 52px}
 			p, a{font-size: 48px}
+			h1, h2{
+				font-size: 52px;
+				span:nth-child(1n){color: $pink1;}
+				span:nth-child(2n){color: $pink2;}
+				span:nth-child(7n-1){color: $yellow;}
+				span:nth-child(4n+1){color: $blue;}
+			}
 
 			nav{
 				margin-top: 20px;
+
 				img{
 					width: 75px;
 					height: 75px;
 					margin-right: 0px;
 				}
 			}
-			
+
 		}

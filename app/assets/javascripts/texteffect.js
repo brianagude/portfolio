@@ -10,10 +10,3 @@
   }
 
   makeSpans('p, h1, h2')
-
-
-  const one = document.querySelectorAll('p span:nth-child(1n)')
-
-  one.addEventListener('touchstart', function(){
-    one.style.color = '#F92A80'
-  })
