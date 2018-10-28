@@ -6,15 +6,20 @@
   </p>
 
   <p>
-      i build internet things, and social experiments with an emphasis on design, and user experience.
+      i build interactive apps and social experiments with an emphasis on design, and user experience
   </p>
 
-  <p>my most recent project is an anonymous social media platform, called note that.</p>
-  <%= link_to 'note that', "https://leaveanote.herokuapp.com/", target: :_blank%>
+  <p>
+    my most recent project is an anonymous social media platform, called note that.
+
+  </p>
+
+  <%= link_to 'note that', "https://www.notethat.co", target: :_blank%>
 
   <nav>
+    <%= link_to image_tag('instagram.png'), 'https://www.instagram.com/brianagude/', target: :_blank%>
     <%= mail_to "briana.gude@gmail.com", image_tag('mail2.png') %>
-    <%= link_to image_tag('nametag.png'), about_path%>
+    <%# <%= link_to image_tag('nametag.png'), about_path%>
     <%# <%= link_to image_tag('folder2.png'), projects_path%>
   </nav>
 </main>
