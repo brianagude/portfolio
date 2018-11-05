@@ -1,15 +1,26 @@
   <main class="projects">
     <h1> projects </h1>
-    <h2> client </h2>
-        <%= link_to 'e-commerce site for a creative agency', "http://dreamhi-1.superhi.com/", target: :_blank%>
+    <section>
+      <h2> client </h2>
+          <%= link_to 'e-commerce site for a creative agency', "http://dreamhi-1.superhi.com/", target: :_blank%>
+          <%= link_to 'portfolio for a film photographer', "http://dumorales.superhi.com/", target: :_blank%>
+    </section>
+    <section>
+      <h2> personal </h2>
+          <%= link_to 'social media platform', "http://www.notethat.co/", target: :_blank%>
+    </section>
+    <nav class>
+      <%= link_to 'about', about_path%>
+      <%= link_to 'homepage', root_path%>
+    </nav>
 
-        <%= link_to 'portfolio site for a film photographer', "http://dumorales.superhi.com/", target: :_blank%>
-
-    <h2> personal </h2>
-        <%= link_to 'social media platform', "http://www.notethat.co/", target: :_blank%>
-
-        <nav class="about">
-          <%= link_to image_tag('nametag.png'), about_path%>
-          <%= link_to image_tag('mummy.png'), root_path%>
-        </nav>
+    <nav class>
+      <%= mail_to "briana.gude@gmail.com", 'briana.gude@gmail.com' %>
+      <%= link_to 'instagram.com/brianagude', 'https://www.instagram.com/brianagude/' %>
+    </nav>
+    
+    <nav class="about">
+      <%= link_to image_tag('nametag.png'), about_path%>
+      <%= link_to image_tag('mummy.png'), root_path%>
+    </nav>
   </main>
