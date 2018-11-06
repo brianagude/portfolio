@@ -11,25 +11,14 @@
 	$pink3: #F7D1E1;
 	$pink4: #FF84B7;
 	$pink5: #F7A9A8;
-	$blue: #235789;
 	$yellow: #f1d302;
-
-	p, h1, h2{
-		span{transition: color 15s;}
-		span:hover{transition: color 0s;}
-		span:nth-child(1n):hover{color: $pink1;}
-		span:nth-child(2n):hover{color: $pink2;}
-		// span:nth-child(7n-1):hover{color: $pink3;}
-		span:nth-child(7n-1):hover{color: $pink4;}
-		// span:nth-child(1n):hover{color: $pink5;}
-		span:nth-child(4n+1):hover{color: $blue;}
-		span:nth-child(5n):hover{color: $yellow;}
-	}
+	$blue: #235789;
 
 	body {
 		font-family: 'Anonymous Pro', monospace;
 	  font-size: 24px;
 		cursor: crosshair;
+		overflow:hidden;
 	}
 
 	a{
@@ -46,12 +35,15 @@
 	// h3{font-size: 48px;}
 
 	main{
-		max-width: 60vh;
+		max-width: 30vw;
+		max-height: 90vh;
 		margin: auto;
 		text-align:right;
+		overflow-y:scroll;
+
 
 		position: fixed;
-		top: 50%;
+		top: 45%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 
@@ -77,13 +69,33 @@
 			section{
 				margin-bottom:30px;
 			}
+
+			p, h1, h2{
+				span{transition: color 15s;}
+				span:hover{transition: color 0s;}
+				span:nth-child(1n):hover{color: $pink1;}
+				span:nth-child(2n):hover{color: $pink2;}
+				// span:nth-child(7n-1):hover{color: $pink3;}
+				span:nth-child(7n-1):hover{color: $pink4;}
+				// span:nth-child(1n):hover{color: $pink5;}
+				span:nth-child(4n+1):hover{color: $blue;}
+				span:nth-child(5n):hover{color: $yellow;}
+			}
 }
 
-	  @media (max-width: 1024px){
-			h1, h2{
-				span:nth-child(1n){color: $pink1;}
-				span:nth-child(2n){color: $pink2;}
-				span:nth-child(7n-1){color: $yellow;}
-				span:nth-child(4n+1){color: $blue;}
+	  @media (max-width: 1270px){
+			main{
+				max-width:100vw;
+
+				p, a{font-size:32px;}
+				h1{font-size: 48px;}
+				h2{font-size: 42px;}
+				h1, h2{
+					span:nth-child(1n){color: $pink1;}
+					span:nth-child(2n){color: $pink2;}
+					span:nth-child(7n-1){color: $yellow;}
+					span:nth-child(4n+1){color: $blue;}
+				}
 			}
+
 		}
