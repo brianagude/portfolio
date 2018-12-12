@@ -1,0 +1,23 @@
+  <main class="projects">
+    <h1> projects </h1>
+    <section>
+      <!-- <h2> client </h2> -->
+          <%# <%= link_to 'e-commerce site for a creative agency', "http://dreamhi-1.superhi.com/", target: :_blank%>
+          <%# <%= link_to 'portfolio for a film photographer', "http://dumorales.superhi.com/", target: :_blank%>
+          <%= link_to 'showcase for a publishing agency', "http://www.flyleaf.org", target: :_blank%>
+    </section>
+    <section>
+      <!-- <h2> personal </h2> -->
+          <%= link_to 'anonymous social media platform', "http://www.notethat.co/", target: :_blank%>
+    </section>
+    <nav class>
+      <%= link_to 'about', about_path%>
+      <%= link_to 'projects', projects_path%>
+      <%= link_to 'homepage', root_path%>
+    </nav>
+
+    <nav class="about">
+      <%= link_to image_tag('nametag.png'), about_path%>
+      <%= link_to image_tag('mummy.png'), root_path%>
+    </nav>
+  </main>

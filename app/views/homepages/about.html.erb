@@ -1,0 +1,32 @@
+  <main class="about">
+    <h1>? ? ? ? ?</h1>
+
+    <p>
+      i live to laugh, travel, & eat; i'm currently learning spanish & greek
+    </p>
+
+    <p>
+      i'm interested in interactive design, and am currently working on some really fun projects
+    </p>
+
+    <p>
+       i typically use scss, rails (on ruby), and javascript libraries to bring my projects to life
+    </p>
+
+    <nav class>
+      <%= link_to 'projects', projects_path%>
+      <%= link_to 'homepage', root_path%>
+    </nav>
+
+    <nav class>
+      <%= mail_to "briana.gude@gmail.com", 'briana.gude@gmail.com' %>
+      <%= link_to 'instagram.com/brianagude', 'https://www.instagram.com/brianagude/' %>
+    </nav>
+
+    <nav class>
+      <%= link_to image_tag('instagram.png'), 'https://www.instagram.com/brianagude/', target: :_blank%>
+      <%= link_to image_tag('mummy.png'), root_path%>
+      <%= link_to image_tag('folder2.png'), projects_path%>
+    </nav>
+
+  </main>

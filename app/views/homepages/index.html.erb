@@ -1,0 +1,29 @@
+<main>
+  <h1> hi, i'm briana </h1>
+
+  <p>a freelance developer & designer based in atlanta, ga</p>
+
+  <p>i build interactive apps, and social experiments with an emphasis on design, and user experience</p>
+
+  <p>my most recent project is an anonymous social media platform called note that</p>
+
+
+
+  <nav class="first">
+    <%# <%= link_to 'note that', "http://www.notethat.co", target: :_blank%>
+    <%= link_to 'projects', projects_path%>
+    <%= link_to 'about me', about_path%>
+  </nav>
+
+  <nav>
+    <%= mail_to "briana.gude@gmail.com", 'briana.gude@gmail.com' %>
+    <%= link_to 'instagram.com/brianagude', 'https://www.instagram.com/brianagude/' %>
+  </nav>
+
+
+  <nav>
+    <%= mail_to "briana.gude@gmail.com", image_tag('mail2.png') %>
+    <%= link_to image_tag('nametag.png'), about_path%>
+    <%= link_to image_tag('folder2.png'), projects_path%>
+  </nav>
+</main>
